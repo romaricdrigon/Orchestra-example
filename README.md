@@ -4,3 +4,13 @@ Orchestra-example
 Example of usage of Orchestra framework
 
 Using Symfony2 standard edition 2.3
+
+## Description ##
+
+This is a very basic Car Rental application.
+
+Domains objects are:
+
+  * a `Car` has a condition, a price per day or km
+  * a `Rental` has start and end dates
+  * a `Customer` which can be valid or not regarding different criteria (age...) and must give his driver licence
