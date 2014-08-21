@@ -51,5 +51,11 @@
         "branch-alias": {
             "dev-master": "2.3-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://gitlab.intranet.edsi-tech.com/romaric.drigon/orchestrabundle.git"
+        }
+    ]
 }
