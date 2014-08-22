@@ -17,7 +17,11 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
+            // vendor, Orchestra bundle
             new RomaricDrigon\OrchestraBundle\RomaricDrigonOrchestraBundle(),
+
+            // our example bundle
+            new RomaricDrigon\ExampleBundle\RomaricDrigonExampleBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
