@@ -1,0 +1,3 @@
+admin:
+    resource: '@RomaricDrigonOrchestraBundle/Resources/config/routing.xml'
+    prefix: /admin
