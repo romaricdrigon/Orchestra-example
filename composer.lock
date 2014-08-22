@@ -913,14 +913,8 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/romaricdrigon/OrchestraBundle.git",
-                "reference": "39dec2ca4aea90c4c2fcc633c50e865db5b5d100"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/39dec2ca4aea90c4c2fcc633c50e865db5b5d100",
-                "reference": "39dec2ca4aea90c4c2fcc633c50e865db5b5d100",
-                "shasum": ""
+                "url": "http://gitlab.intranet.edsi-tech.com/romaric.drigon/orchestrabundle.git",
+                "reference": "a6cee8e8cdb6dd7d14ec1cccfd1bebb2c5930c05"
             },
             "require": {
                 "php": "~5.4",
@@ -932,7 +926,6 @@
                     "RomaricDrigon\\OrchestraBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -943,7 +936,7 @@
                 }
             ],
             "description": "Naked Object framework build on top of Symfony2",
-            "time": "2014-07-18 11:33:43"
+            "time": "2014-08-22 09:13:54"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -1598,6 +1591,7 @@
     "stability-flags": {
         "romaricdrigon/orchestra-bundle": 20
     },
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.3"
     },
