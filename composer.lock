@@ -914,11 +914,15 @@
             "source": {
                 "type": "git",
                 "url": "http://gitlab.intranet.edsi-tech.com/romaric.drigon/orchestrabundle.git",
-                "reference": "a6cee8e8cdb6dd7d14ec1cccfd1bebb2c5930c05"
+                "reference": "442ae945dfc05606f3845e26116a2cc163e9e706"
             },
             "require": {
                 "php": "~5.4",
                 "symfony/framework-bundle": "~2.3"
+            },
+            "require-dev": {
+                "phake/phake": "~1.0",
+                "phpunit/phpunit": "~4.2"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -932,11 +936,11 @@
             "authors": [
                 {
                     "name": "Romaric Drigon",
-                    "email": "r.drigon@edsi-tech.com"
+                    "email": "romaric.drigon@gmail.com"
                 }
             ],
             "description": "Naked Object framework build on top of Symfony2",
-            "time": "2014-08-22 09:13:54"
+            "time": "2014-08-22 13:12:11"
         },
         {
             "name": "sensio/distribution-bundle",
