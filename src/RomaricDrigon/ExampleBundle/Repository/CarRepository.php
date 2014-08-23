@@ -16,7 +16,7 @@ use RomaricDrigon\OrchestraBundle\Domain\RepositoryInterface;
  */
 class CarRepository implements RepositoryInterface
 {
-    public function all()
+    public function listing()
     {
         return []; // do nothing right now!
     }
