@@ -1,4 +1,4 @@
-orchestra_dashboard:
+orchestra_routing:
     resource: '@RomaricDrigonOrchestraBundle/Resources/config/routing.xml'
     prefix: /admin
 

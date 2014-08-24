@@ -19,6 +19,7 @@ class AppKernel extends Kernel
 
             // vendor, Orchestra bundle
             new RomaricDrigon\OrchestraBundle\RomaricDrigonOrchestraBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 
             // our example bundle
             new RomaricDrigon\ExampleBundle\RomaricDrigonExampleBundle(),
