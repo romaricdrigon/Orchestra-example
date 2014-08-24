@@ -1032,12 +1032,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/romaricdrigon/OrchestraBundle.git",
-                "reference": "b646d5cb794c58894078bbf1fa979767cf38f0f0"
+                "reference": "b308178991be4ca76362914b3a82a520f8edc9fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/b646d5cb794c58894078bbf1fa979767cf38f0f0",
-                "reference": "b646d5cb794c58894078bbf1fa979767cf38f0f0",
+                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/b308178991be4ca76362914b3a82a520f8edc9fa",
+                "reference": "b308178991be4ca76362914b3a82a520f8edc9fa",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1069,7 @@
                 }
             ],
             "description": "Naked Object framework build on top of Symfony2",
-            "time": "2014-08-24 20:20:04"
+            "time": "2014-08-24 21:52:44"
         },
         {
             "name": "sensio/distribution-bundle",
