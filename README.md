@@ -3,7 +3,7 @@ Orchestra-example
 
 Example of usage of Orchestra framework
 
-Using Symfony2 standard edition 2.3
+Using Symfony2 standard edition 2.4 (& PHP >= 5.4)
 
 ## Description ##
 
