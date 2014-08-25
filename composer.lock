@@ -1032,9 +1032,11 @@
             "source": {
                 "type": "git",
                 "url": "http://gitlab.intranet.edsi-tech.com/romaric.drigon/orchestrabundle.git",
-                "reference": "78ac46c9d7bb04cfa8a6c3a9d003e154283aa1b9"
+                "reference": "3775528446f026e14e0c79502e0b14526b1201e8"
             },
             "require": {
+                "doctrine/doctrine-bundle": "~1.2",
+                "doctrine/orm": "~2.2,>=2.2.3",
                 "knplabs/knp-menu-bundle": "~2.0",
                 "php": "~5.4",
                 "symfony/assetic-bundle": "~2.3",
@@ -1062,7 +1064,7 @@
                 }
             ],
             "description": "Naked Object framework build on top of Symfony2",
-            "time": "2014-08-25 11:36:31"
+            "time": "2014-08-25 13:20:50"
         },
         {
             "name": "sensio/distribution-bundle",
