@@ -8,11 +8,15 @@
  */
 
 namespace RomaricDrigon\ExampleBundle\Repository;
+
 use RomaricDrigon\OrchestraBundle\Domain\RepositoryInterface;
+use RomaricDrigon\OrchestraBundle\Annotation\Name;
 
 /**
  * Class CarRepository
  * @author Romaric Drigon <romaric.drigon@gmail.com>
+ *
+ * @Name("Cars")
  */
 class CarRepository implements RepositoryInterface
 {
