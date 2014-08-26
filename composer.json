@@ -55,7 +55,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "http://gitlab.intranet.edsi-tech.com/romaric.drigon/orchestrabundle.git"
+            "url": "git@github.com:romaricdrigon/OrchestraBundle.git"
         }
     ]
 }
