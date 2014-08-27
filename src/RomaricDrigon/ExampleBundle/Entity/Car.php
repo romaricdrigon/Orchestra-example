@@ -9,19 +9,14 @@
 
 namespace RomaricDrigon\ExampleBundle\Entity;
 
-use RomaricDrigon\OrchestraBundle\Domain\Base\BaseRepository;
+use RomaricDrigon\OrchestraBundle\Domain\EntityInterface;
 
 /**
  * Class Car
  * @author Romaric Drigon <romaric.drigon@gmail.com>
  */
-class Car extends BaseRepository
+class Car implements EntityInterface
 {
-    public function listing()
-    {
-        return [];
-    }
-
     public function view()
     {
         // example method
