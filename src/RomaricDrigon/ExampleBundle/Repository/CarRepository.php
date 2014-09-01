@@ -9,8 +9,8 @@
 
 namespace RomaricDrigon\ExampleBundle\Repository;
 
-use RomaricDrigon\OrchestraBundle\Domain\RepositoryInterface;
 use RomaricDrigon\OrchestraBundle\Annotation\Name;
+use RomaricDrigon\OrchestraBundle\Domain\Doctrine\BaseRepository;
 
 /**
  * Class CarRepository
@@ -18,10 +18,6 @@ use RomaricDrigon\OrchestraBundle\Annotation\Name;
  *
  * @Name("Cars")
  */
-class CarRepository implements RepositoryInterface
+class CarRepository extends BaseRepository
 {
-    public function listing()
-    {
-        return []; // do nothing right now!
-    }
 } 
