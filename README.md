@@ -15,6 +15,16 @@ Domains objects are:
   * a `Rental` has start and end dates
   * a `Customer` which can be valid or not regarding different criteria (age...) and must give his driver licence
 
+## Installation ##
+
+Copy this project files.
+Then you need to install it with [composer](https://getcomposer.org/), typically:
+```shell
+php composer.phar install
+```
+
+You can then run the provided install script, ```./install.sh```
+
 ## Orchestra UI ##
 
 To see Orchestra generated UI, go to `/admin`
