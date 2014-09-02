@@ -1032,12 +1032,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:romaricdrigon/OrchestraBundle.git",
-                "reference": "0876080ccb8c4cc50e703de0439ed5d19bb8b118"
+                "reference": "bb389652a4c80264d6d4919ac33596e9f642446a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/0876080ccb8c4cc50e703de0439ed5d19bb8b118",
-                "reference": "0876080ccb8c4cc50e703de0439ed5d19bb8b118",
+                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/bb389652a4c80264d6d4919ac33596e9f642446a",
+                "reference": "bb389652a4c80264d6d4919ac33596e9f642446a",
                 "shasum": ""
             },
             "require": {
@@ -1076,7 +1076,7 @@
                 "source": "https://github.com/romaricdrigon/OrchestraBundle/tree/master",
                 "issues": "https://github.com/romaricdrigon/OrchestraBundle/issues"
             },
-            "time": "2014-09-01 18:30:12"
+            "time": "2014-09-02 13:25:15"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -1128,22 +1128,22 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.0",
+            "version": "v3.0.2",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "2016a90bd032248e7d6e9da29def4959821127c8"
+                "reference": "9b22aaee517e80aad3238ea0328458b6f964066f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/2016a90bd032248e7d6e9da29def4959821127c8",
-                "reference": "2016a90bd032248e7d6e9da29def4959821127c8",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/9b22aaee517e80aad3238ea0328458b6f964066f",
+                "reference": "9b22aaee517e80aad3238ea0328458b6f964066f",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.2",
-                "symfony/framework-bundle": "~2.4"
+                "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
                 "symfony/expression-language": "~2.4",
@@ -1171,9 +1171,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "This bundle provides a way to configure your controllers with annotations",
@@ -1181,7 +1179,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2013-12-03 07:53:39"
+            "time": "2014-09-02 07:11:30"
         },
         {
             "name": "sensio/generator-bundle",
