@@ -17,6 +17,16 @@ use RomaricDrigon\OrchestraBundle\Domain\EntityInterface;
  */
 class Car implements EntityInterface
 {
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $name;
+
     public function view()
     {
         // example method

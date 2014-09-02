@@ -18,3 +18,8 @@ Domains objects are:
 ## Orchestra UI ##
 
 To see Orchestra generated UI, go to `/admin`
+
+## Doctrine ##
+
+In this project we use YAML mapping for Doctrine.
+We advise you not to use annotations, not to pollute your domain model.
