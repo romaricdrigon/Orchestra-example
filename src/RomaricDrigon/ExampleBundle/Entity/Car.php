@@ -9,13 +9,14 @@
 
 namespace RomaricDrigon\ExampleBundle\Entity;
 
-use RomaricDrigon\OrchestraBundle\Domain\EntityInterface;
+use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
+use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
 
 /**
  * Class Car
  * @author Romaric Drigon <romaric.drigon@gmail.com>
  */
-class Car implements EntityInterface
+class Car implements EntityInterface, ListableInterface
 {
     /**
      * @var integer
@@ -30,5 +31,19 @@ class Car implements EntityInterface
     public function view()
     {
         // example method
+    }
+
+    /**
+     * Return data to display in the listing
+     * Keys will be used for table headers
+     *
+     * @inheritdoc
+     */
+    public function viewListing()
+    {
+        return [
+            '#'     => $this->id,
+            'name'  => $this->name
+        ];
     }
 } 
