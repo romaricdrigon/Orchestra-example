@@ -8,7 +8,9 @@
  */
 
 namespace RomaricDrigon\ExampleBundle\Command;
+
 use RomaricDrigon\OrchestraBundle\Domain\Command\CommandInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Class RegisterCarCommand
@@ -16,5 +18,8 @@ use RomaricDrigon\OrchestraBundle\Domain\Command\CommandInterface;
  */
 class RegisterCarCommand implements CommandInterface
 {
+    /**
+     * @Assert\NotBlank()
+     */
     public $name;
 } 
