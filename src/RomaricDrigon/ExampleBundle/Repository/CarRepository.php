@@ -9,6 +9,8 @@
 
 namespace RomaricDrigon\ExampleBundle\Repository;
 
+use RomaricDrigon\ExampleBundle\Command\RegisterCarCommand;
+use RomaricDrigon\ExampleBundle\Entity\Car;
 use RomaricDrigon\OrchestraBundle\Annotation\Name;
 use RomaricDrigon\OrchestraBundle\Domain\Doctrine\BaseRepository;
 
@@ -20,8 +22,10 @@ use RomaricDrigon\OrchestraBundle\Domain\Doctrine\BaseRepository;
  */
 class CarRepository extends BaseRepository
 {
-    public function createNew()
+    public function registerNew(RegisterCarCommand $command)
     {
-        
+        $car = new Car($command->name);
+
+        $this->objectManager->saveObject($car);
     }
 } 
