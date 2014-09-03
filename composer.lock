@@ -1148,12 +1148,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:romaricdrigon/OrchestraBundle.git",
-                "reference": "ff3af8c89b2afcf7aa484b969c15010ec0818412"
+                "reference": "0f2185ca3c1ee4368460b9bc0b7b32a3b7dcf90e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/ff3af8c89b2afcf7aa484b969c15010ec0818412",
-                "reference": "ff3af8c89b2afcf7aa484b969c15010ec0818412",
+                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/0f2185ca3c1ee4368460b9bc0b7b32a3b7dcf90e",
+                "reference": "0f2185ca3c1ee4368460b9bc0b7b32a3b7dcf90e",
                 "shasum": ""
             },
             "require": {
@@ -1192,21 +1192,21 @@
                 "source": "https://github.com/romaricdrigon/OrchestraBundle/tree/master",
                 "issues": "https://github.com/romaricdrigon/OrchestraBundle/issues"
             },
-            "time": "2014-09-02 17:51:01"
+            "time": "2014-09-03 14:04:47"
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v2.3.4",
+            "version": "v2.3.5",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "66df91b4bd637a83299d8072aed3658bfd3b3021"
+                "reference": "715fcb65f9a4841ffaf40c0bf050329d74c84cad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/66df91b4bd637a83299d8072aed3658bfd3b3021",
-                "reference": "66df91b4bd637a83299d8072aed3658bfd3b3021",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/715fcb65f9a4841ffaf40c0bf050329d74c84cad",
+                "reference": "715fcb65f9a4841ffaf40c0bf050329d74c84cad",
                 "shasum": ""
             },
             "require": {
@@ -1230,9 +1230,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "The base bundle for the Symfony Distributions",
@@ -1240,7 +1238,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2013-08-22 05:04:53"
+            "time": "2014-09-03 12:25:05"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -1634,16 +1632,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.4.8",
+            "version": "v2.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "3da923989cce41c149c6f20b7723c052ac251b16"
+                "reference": "6266883049bcefccc26bdb2def61683bbc3fb333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/3da923989cce41c149c6f20b7723c052ac251b16",
-                "reference": "3da923989cce41c149c6f20b7723c052ac251b16",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/6266883049bcefccc26bdb2def61683bbc3fb333",
+                "reference": "6266883049bcefccc26bdb2def61683bbc3fb333",
                 "shasum": ""
             },
             "require": {
@@ -1730,14 +1728,12 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "The Symfony PHP framework",
@@ -1745,7 +1741,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-15 14:52:02"
+            "time": "2014-09-03 09:50:20"
         },
         {
             "name": "twig/extensions",

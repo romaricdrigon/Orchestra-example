@@ -20,4 +20,8 @@ use RomaricDrigon\OrchestraBundle\Domain\Doctrine\BaseRepository;
  */
 class CarRepository extends BaseRepository
 {
+    public function createNew()
+    {
+        
+    }
 } 
