@@ -7,3 +7,5 @@ RomaricDrigon\ExampleBundle\Entity\Car:
   fields:
       name:
           type: string
+      numberWheels:
+          type: integer

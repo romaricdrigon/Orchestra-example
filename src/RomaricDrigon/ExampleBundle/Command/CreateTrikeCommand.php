@@ -13,24 +13,13 @@ use RomaricDrigon\OrchestraBundle\Domain\Command\CommandInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Class RegisterCarCommand
+ * Class CreateTrikeCommand
  * @author Romaric Drigon <romaric.drigon@gmail.com>
  */
-class RegisterCarCommand implements CommandInterface
+class CreateTrikeCommand implements CommandInterface
 {
     /**
      * @Assert\NotBlank()
      */
     public $name;
-
-    /**
-     * @Assert\Range(min=1)
-     */
-    public $numberOfWheels;
-
-
-    public function __construct()
-    {
-        $this->numberOfWheels = 4;
-    }
 } 

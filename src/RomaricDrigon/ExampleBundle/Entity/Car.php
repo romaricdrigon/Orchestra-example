@@ -30,15 +30,22 @@ class Car implements EntityInterface, ListableInterface
      */
     private $name;
 
+    /**
+     * @var integer
+     */
+    private $numberWheels;
+
 
     /**
      * @param string $name
+     * @param integer $numberWheels
      *
      * @Hidden
      */
-    public function __construct($name)
+    public function __construct($name, $numberWheels)
     {
         $this->name = $name;
+        $this->numberWheels = $numberWheels;
     }
 
     /**
