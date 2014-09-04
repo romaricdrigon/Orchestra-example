@@ -1148,12 +1148,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:romaricdrigon/OrchestraBundle.git",
-                "reference": "ec7e43a00e37f6cfeba441e4af3b1ab89492651d"
+                "reference": "44f53bb9f4ec787ae9e8acaa902482b8c729c72f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/ec7e43a00e37f6cfeba441e4af3b1ab89492651d",
-                "reference": "ec7e43a00e37f6cfeba441e4af3b1ab89492651d",
+                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/44f53bb9f4ec787ae9e8acaa902482b8c729c72f",
+                "reference": "44f53bb9f4ec787ae9e8acaa902482b8c729c72f",
                 "shasum": ""
             },
             "require": {
@@ -1167,6 +1167,7 @@
                 "symfony/filesystem": "~2.4",
                 "symfony/form": "~2.4",
                 "symfony/framework-bundle": "~2.4",
+                "symfony/security-bundle": "~2.4",
                 "twig/extensions": "~1.0."
             },
             "require-dev": {
@@ -1193,7 +1194,7 @@
                 "source": "https://github.com/romaricdrigon/OrchestraBundle/tree/master",
                 "issues": "https://github.com/romaricdrigon/OrchestraBundle/issues"
             },
-            "time": "2014-09-04 16:17:40"
+            "time": "2014-09-04 18:35:15"
         },
         {
             "name": "sensio/distribution-bundle",

@@ -11,6 +11,8 @@ namespace RomaricDrigon\ExampleBundle\Command;
 
 use RomaricDrigon\OrchestraBundle\Domain\Command\CommandInterface;
 use Symfony\Component\Validator\Constraints as Assert;
+use RomaricDrigon\OrchestraBundle\Annotation\FormType;
+use RomaricDrigon\OrchestraBundle\Annotation\FormOptions;
 
 /**
  * Class RegisterCarCommand
@@ -25,6 +27,11 @@ class RegisterCarCommand implements CommandInterface
 
     /**
      * @Assert\Range(min=1)
+     *
+     * Annotation below allow to set Form type
+     * @FormType("integer")
+     * And options also!
+     * @FormOptions({"attr" = {"min" = 1}})
      */
     public $numberOfWheels;
 

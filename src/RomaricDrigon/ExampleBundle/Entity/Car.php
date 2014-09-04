@@ -11,6 +11,7 @@ namespace RomaricDrigon\ExampleBundle\Entity;
 
 use RomaricDrigon\ExampleBundle\Command\RenameCarCommand;
 use RomaricDrigon\ExampleBundle\Event\CarDestroyedEvent;
+use RomaricDrigon\OrchestraBundle\Annotation\Security;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
 use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
@@ -118,5 +119,15 @@ class Car implements EntityInterface, ListableInterface
     public function remove()
     {
         return new CarDestroyedEvent($this);
+    }
+
+    /**
+     * Because of the Security annotation, this action can not be accessed
+     *
+     * @Security("has_role('ROLE_ADMIN')")
+     */
+    public function inaccessibleAction()
+    {
+        return ;
     }
 } 
