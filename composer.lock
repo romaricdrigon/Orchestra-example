@@ -1148,12 +1148,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:romaricdrigon/OrchestraBundle.git",
-                "reference": "b32dd749baaa81f122268fd2dd3c643adcca41c7"
+                "reference": "fc7b72d5a00dc136de67c73ba2152e8ab2c3b0a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/b32dd749baaa81f122268fd2dd3c643adcca41c7",
-                "reference": "b32dd749baaa81f122268fd2dd3c643adcca41c7",
+                "url": "https://api.github.com/repos/romaricdrigon/OrchestraBundle/zipball/fc7b72d5a00dc136de67c73ba2152e8ab2c3b0a3",
+                "reference": "fc7b72d5a00dc136de67c73ba2152e8ab2c3b0a3",
                 "shasum": ""
             },
             "require": {
@@ -1193,7 +1193,7 @@
                 "source": "https://github.com/romaricdrigon/OrchestraBundle/tree/master",
                 "issues": "https://github.com/romaricdrigon/OrchestraBundle/issues"
             },
-            "time": "2014-09-04 12:16:51"
+            "time": "2014-09-04 14:09:12"
         },
         {
             "name": "sensio/distribution-bundle",
