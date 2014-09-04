@@ -24,9 +24,9 @@ class LoadCarData implements FixtureInterface
      */
     public function load(ObjectManager $manager)
     {
-        $traban = new Car('Traban');
+        $dacia = new Car('Dacia', 4);
 
-        $manager->persist($traban);
+        $manager->persist($dacia);
         $manager->flush();
     }
 } 
