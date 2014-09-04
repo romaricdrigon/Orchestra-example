@@ -10,9 +10,11 @@
 namespace RomaricDrigon\ExampleBundle\Entity;
 
 use RomaricDrigon\ExampleBundle\Command\RenameCarCommand;
+use RomaricDrigon\ExampleBundle\Event\CarDestroyedEvent;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
 use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
+use RomaricDrigon\OrchestraBundle\Annotation\EmitEvent;
 
 /**
  * Class Car
@@ -104,5 +106,17 @@ class Car implements EntityInterface, ListableInterface
         $command->name = $this->name;
 
         return $command;
+    }
+
+    /**
+     * We emit an Event, that will be passed to CarRepository::receive()
+     *
+     * @return CarDestroyedEvent
+     *
+     * @EmitEvent
+     */
+    public function remove()
+    {
+        return new CarDestroyedEvent($this);
     }
 } 
