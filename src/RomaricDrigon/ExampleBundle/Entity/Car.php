@@ -11,6 +11,7 @@ namespace RomaricDrigon\ExampleBundle\Entity;
 
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
+use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
 
 /**
  * Class Car
@@ -31,10 +32,22 @@ class Car implements EntityInterface, ListableInterface
 
     /**
      * @param string $name
+     *
+     * @Hidden
      */
     public function __construct($name)
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return int
+     *
+     * @Hidden
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     public function view()
@@ -47,6 +60,8 @@ class Car implements EntityInterface, ListableInterface
      * Keys will be used for table headers
      *
      * @inheritdoc
+     *
+     * @Hidden
      */
     public function viewListing()
     {
