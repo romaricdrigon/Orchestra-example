@@ -4,9 +4,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--<services>
-        <service id="romaric_drigon_example.car_repository" class="RomaricDrigon\ExampleBundle\Repository\CarRepository">
+    <services>
+        <service id="romaric_drigon_example.principal_repository" class="RomaricDrigon\ExampleBundle\Repository\PrincipalRepository">
             <tag name="orchestra.repository" />
         </service>
-    </services>-->
+        <service id="romaric_drigon_example.student_repository" class="RomaricDrigon\ExampleBundle\Repository\StudentRepository">
+            <tag name="orchestra.repository" />
+        </service>
+        <service id="romaric_drigon_example.subject_repository" class="RomaricDrigon\ExampleBundle\Repository\SubjectRepository">
+            <tag name="orchestra.repository" />
+        </service>
+    </services>
 </container>

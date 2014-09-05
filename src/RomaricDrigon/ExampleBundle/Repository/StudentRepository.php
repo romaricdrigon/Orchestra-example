@@ -12,6 +12,7 @@ use Doctrine\Common\Persistence\ObjectRepository;
 use RomaricDrigon\OrchestraBundle\Doctrine\ObjectManagerInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Doctrine\DoctrineAwareInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Repository\RepositoryInterface;
+use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
 
 /**
  * Class StudentRepository
@@ -23,11 +24,21 @@ class StudentRepository implements RepositoryInterface, DoctrineAwareInterface
 
     protected $objectManager;
 
+    /**
+     * @param ObjectRepository $entityRepository
+     *
+     * @Hidden
+     */
     public function setDoctrineRepository(ObjectRepository $entityRepository)
     {
         $this->doctrineRepository = $entityRepository;
     }
 
+    /**
+     * @param ObjectManagerInterface $objectManager
+     *
+     * @Hidden
+     */
     public function setObjectManager(ObjectManagerInterface $objectManager)
     {
         $this->objectManager = $objectManager;
@@ -38,6 +49,12 @@ class StudentRepository implements RepositoryInterface, DoctrineAwareInterface
         return $this->doctrineRepository->findAll();
     }
 
+    /**
+     * @param mixed $id
+     * @return null|\RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface
+     *
+     * @Hidden
+     */
     public function find($id)
     {
         return $this->doctrineRepository->find($id);
