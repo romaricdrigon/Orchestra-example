@@ -1,0 +1,13 @@
+RomaricDrigon\ExampleBundle\Entity\Principal:
+  type: entity
+  id:
+      id:
+          type: integer
+          generator: { strategy: AUTO }
+  fields:
+      name:
+          type: string
+      city:
+          type: string
+      type:
+          type: string

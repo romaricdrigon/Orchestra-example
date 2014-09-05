@@ -1,0 +1,16 @@
+RomaricDrigon\ExampleBundle\Entity\Student:
+  type: entity
+  id:
+      id:
+          type: integer
+          generator: { strategy: AUTO }
+  fields:
+      firstName:
+          type: string
+      lastName:
+          type: string
+  oneToOne:
+      assignedSubject:
+          targetEntity: RomaricDrigon\ExampleBundle\Entity\Subject
+          nullable: true
+          inversedBy: assignedStudent

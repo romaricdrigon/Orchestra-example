@@ -1,0 +1,19 @@
+RomaricDrigon\ExampleBundle\Entity\Subject:
+  type: entity
+  id:
+      id:
+          type: integer
+          generator: { strategy: AUTO }
+  fields:
+      title:
+          type: string
+      description:
+          type: text
+  oneToOne:
+      assignedStudent:
+          targetEntity: RomaricDrigon\ExampleBundle\Entity\Student
+          nullable: true
+          mappedBy: assignedSubject
+      principal:
+          targetEntity: RomaricDrigon\ExampleBundle\Entity\Principal
+          cascade: [ "persist", "remove" ]

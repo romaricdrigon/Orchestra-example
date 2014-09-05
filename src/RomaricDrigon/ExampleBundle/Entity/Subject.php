@@ -22,6 +22,8 @@ class Subject implements EntityInterface
 
     protected $principal;
 
+    protected $assignedStudent;
+
     protected $id;
 
     public function getId()
