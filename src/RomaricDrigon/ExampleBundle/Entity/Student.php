@@ -9,12 +9,13 @@
 
 namespace RomaricDrigon\ExampleBundle\Entity;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
+use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
 
 /**
  * Class Student
  * @author Romaric Drigon <romaric.drigon@gmail.com>
  */
-class Student implements EntityInterface
+class Student implements EntityInterface, ListableInterface
 {
     protected $firstName;
 
@@ -27,5 +28,20 @@ class Student implements EntityInterface
     public function getId()
     {
         return $this->id;
+    }
+
+    public function viewListing()
+    {
+        return [
+            'First name' => $this->firstName,
+            'Last name' => $this->lastName,
+            'Subject'   => $this->assignedSubject ? $this->assignedSubject->getTitle() : ''
+        ];
+    }
+
+    public function __construct($firstName, $lastName)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
     }
 } 

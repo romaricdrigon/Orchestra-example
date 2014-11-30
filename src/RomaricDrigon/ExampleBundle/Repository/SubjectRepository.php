@@ -8,6 +8,7 @@
  */
 
 namespace RomaricDrigon\ExampleBundle\Repository;
+use RomaricDrigon\ExampleBundle\Command\RegisterStudentCommand;
 use RomaricDrigon\OrchestraBundle\Domain\Doctrine\BaseRepository;
 
 /**

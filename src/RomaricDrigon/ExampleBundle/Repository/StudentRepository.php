@@ -9,10 +9,12 @@
 
 namespace RomaricDrigon\ExampleBundle\Repository;
 use Doctrine\Common\Persistence\ObjectRepository;
+use RomaricDrigon\ExampleBundle\Entity\Student;
 use RomaricDrigon\OrchestraBundle\Doctrine\ObjectManagerInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Doctrine\DoctrineAwareInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Repository\RepositoryInterface;
 use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
+use RomaricDrigon\ExampleBundle\Command\RegisterStudentCommand;
 
 /**
  * Class StudentRepository
@@ -58,5 +60,12 @@ class StudentRepository implements RepositoryInterface, DoctrineAwareInterface
     public function find($id)
     {
         return $this->doctrineRepository->find($id);
+    }
+
+    public function registerStudent(RegisterStudentCommand $command)
+    {
+        $student = new Student($command->firstName, $command->lastName);
+
+        $this->objectManager->saveObject($student);
     }
 } 

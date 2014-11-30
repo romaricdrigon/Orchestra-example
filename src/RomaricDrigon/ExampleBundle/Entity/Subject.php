@@ -9,6 +9,8 @@
 
 namespace RomaricDrigon\ExampleBundle\Entity;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
+use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
+use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
 
 /**
  * Class Subject
@@ -30,4 +32,14 @@ class Subject implements EntityInterface
     {
         return $this->id;
     }
-} 
+
+    /**
+     * @return mixed
+     *
+     * @Hidden
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+}
