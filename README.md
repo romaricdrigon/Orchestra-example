@@ -5,6 +5,10 @@ Example of usage of Orchestra framework
 
 Using Symfony2 standard edition 2.4 (& PHP >= 5.4)
 
+This repo is in sync with [OrchestraBundle](https://github.com/romaricdrigon/OrchestraBundle/tree/master).
+To see how to use Orchestra 0.8, be sure to be at tag 0.8 or on the correct branch.
+
+
 ## Description ##
 
 This is a very basic Car Rental application.
