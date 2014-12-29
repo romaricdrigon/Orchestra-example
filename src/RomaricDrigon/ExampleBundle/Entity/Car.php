@@ -11,11 +11,9 @@ namespace RomaricDrigon\ExampleBundle\Entity;
 
 use RomaricDrigon\ExampleBundle\Command\RenameCarCommand;
 use RomaricDrigon\ExampleBundle\Event\CarDestroyedEvent;
-use RomaricDrigon\OrchestraBundle\Annotation\Security;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableEntityInterface;
-use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
-use RomaricDrigon\OrchestraBundle\Annotation\EmitEvent;
+use RomaricDrigon\OrchestraBundle\Annotation as Orchestra;
 
 /**
  * Class Car
@@ -43,7 +41,7 @@ class Car implements EntityInterface, ListableEntityInterface
      * @param string $name
      * @param integer $numberWheels
      *
-     * @Hidden
+     * @Orchestra\Hidden
      */
     public function __construct($name, $numberWheels)
     {
@@ -54,7 +52,7 @@ class Car implements EntityInterface, ListableEntityInterface
     /**
      * @return int
      *
-     * @Hidden
+     * @Orchestra\Hidden
      */
     public function getId()
     {
@@ -82,7 +80,7 @@ class Car implements EntityInterface, ListableEntityInterface
      *
      * @inheritdoc
      *
-     * @Hidden
+     * @Orchestra\Hidden
      */
     public function viewListing()
     {
@@ -98,7 +96,7 @@ class Car implements EntityInterface, ListableEntityInterface
      *
      * @return RenameCarCommand
      *
-     * @Hidden
+     * @Orchestra\Hidden
      */
     public function buildRenameCarCommand()
     {
@@ -114,7 +112,7 @@ class Car implements EntityInterface, ListableEntityInterface
      *
      * @return CarDestroyedEvent
      *
-     * @EmitEvent
+     * @Orchestra\EmitEvent
      */
     public function remove()
     {
@@ -124,7 +122,7 @@ class Car implements EntityInterface, ListableEntityInterface
     /**
      * Because of the Security annotation, this action can not be accessed
      *
-     * @Security("has_role('ROLE_ADMIN')")
+     * @Orchestra\Security("has_role('ROLE_ADMIN')")
      */
     public function inaccessibleAction()
     {
