@@ -13,7 +13,7 @@ use RomaricDrigon\ExampleBundle\Command\RenameCarCommand;
 use RomaricDrigon\ExampleBundle\Event\CarDestroyedEvent;
 use RomaricDrigon\OrchestraBundle\Annotation\Security;
 use RomaricDrigon\OrchestraBundle\Domain\Entity\EntityInterface;
-use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableInterface;
+use RomaricDrigon\OrchestraBundle\Domain\Entity\ListableEntityInterface;
 use RomaricDrigon\OrchestraBundle\Annotation\Hidden;
 use RomaricDrigon\OrchestraBundle\Annotation\EmitEvent;
 
@@ -21,7 +21,7 @@ use RomaricDrigon\OrchestraBundle\Annotation\EmitEvent;
  * Class Car
  * @author Romaric Drigon <romaric.drigon@gmail.com>
  */
-class Car implements EntityInterface, ListableInterface
+class Car implements EntityInterface, ListableEntityInterface
 {
     /**
      * @var integer

@@ -6,7 +6,7 @@
 
     <services>
         <service id="romaric_drigon_example.car_repository" class="RomaricDrigon\ExampleBundle\Repository\CarRepository">
-            <tag name="orchestra.repository" />
+            <tag name="orchestra.repository" entityClass="RomaricDrigon\ExampleBundle\Entity\Car" />
         </service>
     </services>
 </container>
